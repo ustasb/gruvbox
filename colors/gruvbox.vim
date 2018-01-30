@@ -99,9 +99,11 @@ let s:gb.gray_245    = ['#928374', 245]     " 146-131-116
 let s:gb.gray_244    = ['#928374', 244]     " 146-131-116
 
 let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215
+let s:gb.bu_light0_hard = ['#fdf6e3', 230]  " Solarized's brwhite
 let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193
 let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188
 let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178
+let s:gb.bu_light1   = ['#e9e2d1', 223]     " Solarized's brwhite + 8% black
 let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161
 let s:gb.light3      = ['#bdae93', 248]     " 189-174-147
 let s:gb.light4      = ['#a89984', 246]     " 168-153-132
@@ -202,10 +204,10 @@ else
   if g:gruvbox_contrast_light == 'soft'
     let s:bg0  = s:gb.light0_soft
   elseif g:gruvbox_contrast_light == 'hard'
-    let s:bg0  = s:gb.light0_hard
+    let s:bg0  = s:gb.bu_light0_hard
   endif
 
-  let s:bg1  = s:gb.light1
+  let s:bg1  = s:gb.bu_light1
   let s:bg2  = s:gb.light2
   let s:bg3  = s:gb.light3
   let s:bg4  = s:gb.light4
