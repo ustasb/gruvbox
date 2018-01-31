@@ -105,6 +105,7 @@ let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188
 let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178
 let s:gb.bu_light1   = ['#e9e2d1', 223]     " Solarized's brwhite + 8% black
 let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161
+let s:gb.bu_light2   = ['#d4cebe', 250]     " Solarized's brwhite + 16% black
 let s:gb.light3      = ['#bdae93', 248]     " 189-174-147
 let s:gb.light4      = ['#a89984', 246]     " 168-153-132
 let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132
@@ -208,7 +209,7 @@ else
   endif
 
   let s:bg1  = s:gb.bu_light1
-  let s:bg2  = s:gb.light2
+  let s:bg2  = s:gb.bu_light2
   let s:bg3  = s:gb.light3
   let s:bg4  = s:gb.light4
 
@@ -506,7 +507,7 @@ endif
 hi! link NonText GruvboxBg2
 hi! link SpecialKey GruvboxBg2
 
-call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
+call s:HL('Visual',    s:none,  s:bg2, s:invert_selection)
 hi! link VisualNOS Visual
 
 call s:HL('Search',    s:yellow, s:bg0, s:inverse)
