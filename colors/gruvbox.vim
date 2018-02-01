@@ -1353,7 +1353,7 @@ hi! link markdownUrlDelimiter GruvboxFg3
 hi! link markdownLinkDelimiter GruvboxFg3
 hi! link markdownLinkTextDelimiter GruvboxFg3
 
-hi! link markdownHeadingDelimiter GruvboxOrange
+hi! link markdownHeadingDelimiter GruvboxOrangeBold
 hi! link markdownUrl Underlined
 hi! link markdownUrlTitleDelimiter GruvboxGreen
 
