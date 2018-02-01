@@ -134,6 +134,15 @@ let s:gb.faded_purple   = ['#8f3f71', 96]      " 143-63-113
 let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88
 let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
 
+" credit: https://github.com/sonph/onehalf
+let s:gb.bu_faded_red      = ['#e45649', 88]
+let s:gb.bu_faded_green    = ['#50a14f', 100]
+let s:gb.bu_faded_yellow   = ['#b57614', 136]  " unchanged
+let s:gb.bu_faded_blue     = ['#0184bc', 24]
+let s:gb.bu_faded_purple   = ['#a626a4', 96]
+let s:gb.bu_faded_aqua     = ['#2aa198', 66]   " Solarized's cyan
+let s:gb.bu_faded_orange   = ['#af3a03', 130]  " unchanged
+
 " }}}
 " Setup Emphasis: {{{
 
@@ -223,13 +232,13 @@ else
 
   let s:fg4_256 = s:gb.dark4_256
 
-  let s:red    = s:gb.faded_red
-  let s:green  = s:gb.faded_green
-  let s:yellow = s:gb.faded_yellow
-  let s:blue   = s:gb.faded_blue
-  let s:purple = s:gb.faded_purple
-  let s:aqua   = s:gb.faded_aqua
-  let s:orange = s:gb.faded_orange
+  let s:red    = s:gb.bu_faded_red
+  let s:green  = s:gb.bu_faded_green
+  let s:yellow = s:gb.bu_faded_yellow
+  let s:blue   = s:gb.bu_faded_blue
+  let s:purple = s:gb.bu_faded_purple
+  let s:aqua   = s:gb.bu_faded_aqua
+  let s:orange = s:gb.bu_faded_orange
 endif
 
 " reset to 16 colors fallback
