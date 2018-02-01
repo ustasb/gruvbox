@@ -510,8 +510,8 @@ hi! link SpecialKey GruvboxBg2
 call s:HL('Visual',    s:none,  s:bg2, s:invert_selection)
 hi! link VisualNOS Visual
 
-call s:HL('Search',    s:yellow, s:bg0, s:inverse)
-call s:HL('IncSearch', s:hls_cursor, s:bg0, s:inverse)
+call s:HL('Search',    s:bg0, s:yellow, s:bold)
+call s:HL('IncSearch', s:bg0, s:hls_cursor, s:bold)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
