@@ -677,12 +677,16 @@ call s:HL('DiffText',   s:yellow, s:bg0, s:inverse)
 " Spelling: {{{
 
 if has("spell")
-  " Not capitalised word, or compile warnings
-  if g:gruvbox_improved_warnings == 0
-    call s:HL('SpellCap',   s:none, s:none, s:undercurl, s:aqua)
+  if g:bu_ignore_capitalization == 1
+    call s:HL('SpellCap', s:none, s:none)
   else
-    call s:HL('SpellCap',   s:green, s:none, s:bold . s:italic)
-  endif
+    " Not capitalised word, or compile warnings
+    if g:gruvbox_improved_warnings == 0
+      call s:HL('SpellCap',   s:none, s:none, s:undercurl, s:aqua)
+    else
+      call s:HL('SpellCap',   s:green, s:none, s:bold . s:italic)
+    endif
+  end
   " Not recognized word
   call s:HL('SpellBad',   s:none, s:none, s:undercurl, s:red)
   " Wrong spelling for selected region
