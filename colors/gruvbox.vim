@@ -1418,6 +1418,22 @@ hi! link jsonString GruvboxFg1
 
 " }}}
 
+" coc.nvim {{{
+
+hi! link CocErrorSign GruvboxRedSign
+hi! link CocWarningSign GruvboxYellowSign
+hi! link CocInfoSign GruvboxBlueSign
+hi! link CocHintSign GruvboxAquaSign
+hi! link CocFloating SignColumn
+
+" coc.nvim uses jsonc as its configuration file format which supports comments.
+augroup AG_CocNvim
+  autocmd!
+  autocmd FileType json syntax match Comment +\/\/.\+$+
+augroup END
+
+" }}}
+
 
 " Functions -------------------------------------------------------------------
 " Search Highlighting Cursor {{{
