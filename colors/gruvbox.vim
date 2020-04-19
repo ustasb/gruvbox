@@ -285,7 +285,7 @@ let s:gb.orange = s:orange
 " Setup Terminal Colors For Neovim: {{{
 
 if has('nvim')
-  let g:terminal_color_0 = s:bg0[0]
+  let g:terminal_color_0 = s:gb.dark1[0]
   let g:terminal_color_8 = s:gray[0]
 
   let g:terminal_color_1 = s:gb.neutral_red[0]
@@ -306,8 +306,8 @@ if has('nvim')
   let g:terminal_color_6 = s:gb.neutral_aqua[0]
   let g:terminal_color_14 = s:aqua[0]
 
-  let g:terminal_color_7 = s:fg4[0]
-  let g:terminal_color_15 = s:fg1[0]
+  let g:terminal_color_7 = s:gb.light4[0]
+  let g:terminal_color_15 = s:gb.bu_light2[0]
 endif
 
 " }}}
