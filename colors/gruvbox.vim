@@ -1109,6 +1109,7 @@ hi! link javaScriptMember GruvboxBlue
 hi! link javaScriptNumber GruvboxPurple
 hi! link javaScriptNull GruvboxPurple
 hi! link javaScriptParens GruvboxFg3
+hi def link jsObjectKey javaScriptMember
 
 " }}}
 " YAJS: {{{
