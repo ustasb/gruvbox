@@ -288,23 +288,53 @@ if has('nvim')
   let g:terminal_color_0 = s:gb.dark1[0]
   let g:terminal_color_8 = s:gray[0]
 
-  let g:terminal_color_1 = s:gb.neutral_red[0]
-  let g:terminal_color_9 = s:red[0]
+  if s:is_dark
+    let g:terminal_color_1 = s:gb.neutral_red[0]
+    let g:terminal_color_9 = s:red[0]
+  else
+    let g:terminal_color_9 = s:gb.neutral_red[0]
+    let g:terminal_color_1 = s:red[0]
+  endif
 
-  let g:terminal_color_2 = s:gb.neutral_green[0]
-  let g:terminal_color_10 = s:green[0]
+  if s:is_dark
+    let g:terminal_color_2 = s:gb.neutral_green[0]
+    let g:terminal_color_10 = s:green[0]
+  else
+    let g:terminal_color_10 = s:gb.neutral_green[0]
+    let g:terminal_color_2 = s:green[0]
+  endif
 
-  let g:terminal_color_3 = s:gb.neutral_yellow[0]
-  let g:terminal_color_11 = s:yellow[0]
+  if s:is_dark
+    let g:terminal_color_3 = s:gb.neutral_yellow[0]
+    let g:terminal_color_11 = s:yellow[0]
+  else
+    let g:terminal_color_11 = s:gb.neutral_yellow[0]
+    let g:terminal_color_3 = s:yellow[0]
+  endif
 
-  let g:terminal_color_4 = s:gb.neutral_blue[0]
-  let g:terminal_color_12 = s:blue[0]
+  if s:is_dark
+    let g:terminal_color_4 = s:gb.neutral_blue[0]
+    let g:terminal_color_12 = s:blue[0]
+  else
+    let g:terminal_color_12 = s:gb.neutral_blue[0]
+    let g:terminal_color_4 = s:blue[0]
+  endif
 
-  let g:terminal_color_5 = s:gb.neutral_purple[0]
-  let g:terminal_color_13 = s:purple[0]
+  if s:is_dark
+    let g:terminal_color_5 = s:gb.neutral_purple[0]
+    let g:terminal_color_13 = s:purple[0]
+  else
+    let g:terminal_color_13 = s:gb.neutral_purple[0]
+    let g:terminal_color_5 = s:purple[0]
+  endif
 
-  let g:terminal_color_6 = s:gb.neutral_aqua[0]
-  let g:terminal_color_14 = s:aqua[0]
+  if s:is_dark
+    let g:terminal_color_6 = s:gb.neutral_aqua[0]
+    let g:terminal_color_14 = s:aqua[0]
+  else
+    let g:terminal_color_14 = s:gb.neutral_aqua[0]
+    let g:terminal_color_6 = s:aqua[0]
+  endif
 
   let g:terminal_color_7 = s:gb.light4[0]
   let g:terminal_color_15 = s:gb.bu_light2[0]
@@ -1347,8 +1377,8 @@ hi! link scalaInterpolation GruvboxAqua
 
 call s:HL('markdownItalic', s:fg3, s:none, s:italic)
 
-hi! link markdownH1 GruvboxGreenBold
-hi! link markdownH2 GruvboxGreenBold
+hi! link markdownH1 GruvboxBlueBold
+hi! link markdownH2 GruvboxBlueBold
 hi! link markdownH3 GruvboxYellowBold
 hi! link markdownH4 GruvboxYellowBold
 hi! link markdownH5 GruvboxYellow
